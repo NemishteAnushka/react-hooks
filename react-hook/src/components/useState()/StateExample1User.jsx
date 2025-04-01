@@ -1,6 +1,6 @@
 import React from "react";
 
-function StateExample1User({ item, handleIncreaseAge }) {
+function StateExample1User({ item, handleIncreaseAge, handleDeleteUser }) {
   return (
     <>
       <h2>FirstName : {item?.firstName}</h2>
@@ -12,6 +12,13 @@ function StateExample1User({ item, handleIncreaseAge }) {
         }}
       >
         Increase age
+      </button>
+      <button
+        onClick={() => {
+          handleDeleteUser(item?.id);
+        }}
+      >
+        Delete user
       </button>
       <hr />
     </>

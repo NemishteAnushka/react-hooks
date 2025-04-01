@@ -20,10 +20,22 @@ function UseStateExample1() {
       });
     });
   };
+  //function to delete user
+  const handleDeleteUser = (id) => {
+    setUsers((prevState) => {
+      return prevState.filter((user) => {
+        return user.id !== id;
+      });
+    });
+  };
   return (
     <>
       <h1>UseState real world example</h1>
-      <StateExample1Users users={users} handleIncreaseAge={handleIncreaseAge} />
+      <StateExample1Users
+        users={users}
+        handleIncreaseAge={handleIncreaseAge}
+        handleDeleteUser={handleDeleteUser}
+      />
     </>
   );
 }
