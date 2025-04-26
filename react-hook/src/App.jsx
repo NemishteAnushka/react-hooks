@@ -1,8 +1,9 @@
 import React from "react";
+import ExampleUseEffect1 from "./components/useEffect()/ExampleUseEffect1";
 // import ExampleUseRef from "./components/useRef()/ExampleUseRef";
 // import FormUseRef from "./components/useRef()/FormUseRef";
 // import SimpleForm from "./components/simple useState project/SimpleForm";
-import RecordKeeping from "./components/simple useState project/RecordKeeping";
+// import RecordKeeping from "./components/simple useState project/RecordKeeping";
 // import UseStateExample1 from "./components/useState()/UseStateExample1";
 // import StateExampleObject from "./components/useState()/StateExampleObject";
 // import ArrayInState from "./components/useState()/ArrayInState";
@@ -21,12 +22,15 @@ function App() {
       {/* <UseStateExample1 /> */}
 
       {/* project 1 */}
-      <RecordKeeping />
+      {/* <RecordKeeping /> */}
       {/* <SimpleForm /> */}
 
       {/* useRef */}
       {/* <ExampleUseRef /> */}
       {/* <FormUseRef /> */}
+
+      {/* useEffect */}
+      <ExampleUseEffect1 />
     </div>
   );
 }
