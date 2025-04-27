@@ -1,5 +1,7 @@
 import React from "react";
-import ExampleUseEffect1 from "./components/useEffect()/ExampleUseEffect1";
+import FetchDataUsingAsync from "./components/useEffect()/FetchDataUsingAsync";
+// import ExampleUseEffect1 from "./components/useEffect()/ExampleUseEffect1";
+// import FetchDataUsingPromise from "./components/useEffect()/FetchDataUsingPromise";
 // import ExampleUseRef from "./components/useRef()/ExampleUseRef";
 // import FormUseRef from "./components/useRef()/FormUseRef";
 // import SimpleForm from "./components/simple useState project/SimpleForm";
@@ -30,7 +32,9 @@ function App() {
       {/* <FormUseRef /> */}
 
       {/* useEffect */}
-      <ExampleUseEffect1 />
+      {/* <ExampleUseEffect1 /> */}
+      {/* <FetchDataUsingPromise /> */}
+      <FetchDataUsingAsync />
     </div>
   );
 }
