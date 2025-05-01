@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import CleanUpFunctions from "./components/useEffect()/CleanUpFunctions";
+import TodoProjectUsingUseReducer from "./components/useReducer()/TodoProjectUsingUseReducer";
+// import ExampleUseReducer from "./components/useReducer()/ExampleUseReducer";
+// import AbortNetworkRequest from "./components/useEffect()/AbortNetworkRequest";
+// import CleanUpFunctions from "./components/useEffect()/CleanUpFunctions";
+// import AddEventListner from "./components/useEffect()/AddEventListner";
 // import FetchDataUsingAsync from "./components/useEffect()/FetchDataUsingAsync";
 // import ExampleUseEffect1 from "./components/useEffect()/ExampleUseEffect1";
 // import FetchDataUsingPromise from "./components/useEffect()/FetchDataUsingPromise";
@@ -22,14 +26,14 @@ function App() {
   return (
     <>
       {/* clean up function */}
-      <label htmlFor="showComponent">Show Component</label>
+      {/* <label htmlFor="showComponent">Show Component</label>
       <input
         type="checkbox"
         name="showComponent"
         id="showComponent"
         checked={show}
         onChange={handleCheckBox}
-      />
+      /> */}
       <div>
         {/* <ReactUseState1 /> */}
         {/* <CounterApplication /> */}
@@ -50,7 +54,13 @@ function App() {
         {/* <ExampleUseEffect1 /> */}
         {/* <FetchDataUsingPromise /> */}
         {/* <FetchDataUsingAsync /> */}
-        {show && <CleanUpFunctions />}
+        {/* {show && <CleanUpFunctions />} */}
+        {/* {show && <AddEventListner />} */}
+        {/* {show && <AbortNetworkRequest />} */}
+
+        {/* useReducer hook */}
+        {/* <ExampleUseReducer /> */}
+        {<TodoProjectUsingUseReducer />}
       </div>
     </>
   );
