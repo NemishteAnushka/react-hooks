@@ -11,6 +11,15 @@ function TodoProjectUsingUseReducer() {
     if (action.type === "DELETE_TODO") {
       return state?.filter((todo) => todo.id !== action.payload);
     }
+    if (action.type === "TOGGLE_COMPLETED") {
+      return state?.map((todo) => {
+        if (todo.id === action.payload.id) {
+          return { ...todo, completed: !todo.completed };
+        } else {
+          return todo;
+        }
+      });
+    }
     return state;
   };
   const initialTodos = [{ id: 1, task: "Homework", completed: true }];
@@ -58,6 +67,16 @@ function TodoProjectUsingUseReducer() {
               }}
             >
               Delete
+            </button>
+            <button
+              onClick={() => {
+                dispatch({
+                  type: "TOGGLE_COMPLETED",
+                  payload: { id: items.id },
+                });
+              }}
+            >
+              Toggle Completed
             </button>
           </div>
         ))}
