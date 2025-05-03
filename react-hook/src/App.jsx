@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import TodoProjectUsingUseReducer from "./components/useReducer()/TodoProjectUsingUseReducer";
+import MyApp from "./components/useContextAPI/MyApp";
+// import TodoProjectUsingUseReducer from "./components/useReducer()/TodoProjectUsingUseReducer";
 // import ExampleUseReducer from "./components/useReducer()/ExampleUseReducer";
 // import AbortNetworkRequest from "./components/useEffect()/AbortNetworkRequest";
 // import CleanUpFunctions from "./components/useEffect()/CleanUpFunctions";
@@ -60,7 +61,10 @@ function App() {
 
         {/* useReducer hook */}
         {/* <ExampleUseReducer /> */}
-        {<TodoProjectUsingUseReducer />}
+        {/* {<TodoProjectUsingUseReducer />} */}
+
+        {/* use context */}
+        <MyApp />
       </div>
     </>
   );
