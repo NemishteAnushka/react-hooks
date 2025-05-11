@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import MyApp from "./components/useContextAPI/MyApp";
+import React from "react";
+import ParentUIComponent from "./components/useContextAPI/provider/ParentUIComponent";
+import ProviderComponent from "./components/useContextAPI/provider/ProviderComponent";
+// import MyApp from "./components/useContextAPI/MyApp";
 // import TodoProjectUsingUseReducer from "./components/useReducer()/TodoProjectUsingUseReducer";
 // import ExampleUseReducer from "./components/useReducer()/ExampleUseReducer";
 // import AbortNetworkRequest from "./components/useEffect()/AbortNetworkRequest";
@@ -18,12 +20,11 @@ import MyApp from "./components/useContextAPI/MyApp";
 // import StateUsingCallBack from "./components/useState()/StateUsingCallBack";
 // import CounterApplication from "./components/useState()/CounterApplication";
 // import ReactUseState1 from "./components/useState()/ReactUseState1";
-
 function App() {
-  const [show, setShow] = useState(true);
-  const handleCheckBox = () => {
-    setShow(() => setShow(!show));
-  };
+  // const [show, setShow] = useState(true);
+  // const handleCheckBox = () => {
+  //   setShow(() => setShow(!show));
+  // };
   return (
     <>
       {/* clean up function */}
@@ -64,7 +65,10 @@ function App() {
         {/* {<TodoProjectUsingUseReducer />} */}
 
         {/* use context */}
-        <MyApp />
+        {/* <MyApp /> */}
+        <ProviderComponent>
+          <ParentUIComponent />
+        </ProviderComponent>
       </div>
     </>
   );
